@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trystian Offerman Web Development Html 5, Javascript </title>
+   <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--Libraries van http://microjs.com/ -->
+  <script src="js/CSSClass.js"></script>
+  <script src="js/salt.min.js"></script>
+  <script src="js/ki.js"></script>
+
+
+   <script src="http://maps.googleapis.com/maps/api/js?sensor=true" type="text/javascript"></script>
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href= "https://google-developers.appspot.com/maps/documentation/javascript/examples/default.css"/>
+  <link rel="stylesheet" href="map.css"/>
+
+
+
+ 
+  <!--[if lt IE 8]>
+  <![endif]-->
+</head>
+<body>
+<section id="header">
+
+ <div id="button_aalsmeer">
+    <p>Naar Aalsmeer </p>
+
+  </div>
+  <h1>Horeca Aalsmeer</h1>
+
+  <div id="menu">
+    <p class="show_menu"> Ik zoek.... </p> 
+
+    <ul class="categorie closed" id="categorie">
+      <li><div class="selectie_button bar" value="bar">bar</div></li>
+      <li><div class="selectie_button restaurant" value="restaurant">restaurant</div></li>
+      <li><div class="selectie_button club" value="club">club</div></li>
+      <li><div class="selectie_button alles" value="alles">alles</div><li>
+      </ul>  
+  </div> 
+</section>
+
+
+
+<div id="map-canvas">
+</div>
+
+<section id="info">
+ <div id="route_knop"><span></span></div>
+  <div class="close" id="close">X </div>
+ <h2 id="name"></h2>
+  <h3 id="horecatype"> </h3>
+  <p id ="description"> </p>
+
+
+  </section>
+
+<script src="controller/controller.js"> </script>
+<script src="models/model.js"> </script>
+<script src="views/view.js"> </script> 
+
+
+
+</body>
+</html>
